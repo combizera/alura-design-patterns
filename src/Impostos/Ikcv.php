@@ -12,7 +12,7 @@ class Ikcv extends Imposto2Aliquotas
      */
     public function deveAplicarTaxaMaxima(Orcamento $orcamento): bool
     {
-        return $orcamento->valor > 300 && $orcamento->quantidadeItens > 3;
+        return $orcamento->valor > 300 && $orcamento->itens > 3;
     }
 
     /**
